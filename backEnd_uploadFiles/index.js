@@ -70,7 +70,7 @@ const upload = multer({ storage: storage, fileFilter: multerFilter });
 const corsOptions = {
     origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "multipart/form-data"],
     credentials: true,
 };
 
