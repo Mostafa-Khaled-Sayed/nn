@@ -101,11 +101,15 @@ export const usePhoto_Gallery = defineStore("Photo_Gallery", {
             try {
                 console.log("wait");
 
-                const response = await axios.post("upload", formData, {
-                    headers: {
-                        "Content-Type": "multipart/form-data",
-                    },
-                });
+                const response = await axios.post(
+                    "http:localhost:3000/upload",
+                    formData,
+                    {
+                        headers: {
+                            "Content-Type": "multipart/form-data",
+                        },
+                    }
+                );
                 console.log(
                     "File uploaded successfully:",
                     response.data.message
