@@ -102,7 +102,7 @@ export const usePhoto_Gallery = defineStore("Photo_Gallery", {
                 console.log("wait");
 
                 const response = await axios.post(
-                    "https://nn-smoky.vercel.app:3000/upload",
+                    "https:localhost:3000/upload",
                     formData,
                     {
                         headers: {
